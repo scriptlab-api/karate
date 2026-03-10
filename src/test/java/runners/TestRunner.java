@@ -6,7 +6,7 @@ class TestRunner {
 
     @Karate.Test
     Karate runTests() {
-        return Karate.run("classpath:feature/healthcheck.feature").relativeTo(getClass());
+        return Karate.run("classpath:features/healthcheck.feature").relativeTo(getClass());
     }
 
 }
