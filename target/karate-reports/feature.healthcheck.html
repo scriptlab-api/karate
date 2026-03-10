@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"7250649a-324f-4883-8975-0b6f63ddabb6",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>feature.healthcheck</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-03-10 04:29:18 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Verify API is reachable</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">feature/healthcheck.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">API Health Check</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Verify API is reachable</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2278</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://www.google.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">69</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2209</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">16:29:16.385 request:
+1 &gt; GET https://www.google.com
+1 &gt; Host: www.google.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.18)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:29:18.092 response time in milliseconds: 1570
+1 &lt; 200
+1 &lt; Date: Tue, 10 Mar 2026 10:59:17 GMT
+1 &lt; Expires: -1
+1 &lt; Cache-Control: private, max-age=0
+1 &lt; Content-Type: text/html; charset=ISO-8859-1
+1 &lt; Content-Security-Policy-Report-Only: object-src &#39;none&#39;;base-uri &#39;self&#39;;script-src &#39;nonce-TWv9SVLkKZbhbimdByKEaw&#39; &#39;strict-dynamic&#39; &#39;report-sample&#39; &#39;unsafe-eval&#39; &#39;unsafe-inline&#39; https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+1 &lt; Reporting-Endpoints: default=&quot;//www.google.com/httpservice/retry/jserror?ei=hfmvaeaMEunN1sQP9YqLsQ0&amp;cad=crash&amp;error=Page%20Crash&amp;jsel=1&amp;bver=2394&quot;
+1 &lt; Accept-CH: Sec-CH-Prefers-Color-Scheme
+1 &lt; P3P: CP=&quot;This is not a P3P policy! See g.co/p3phelp for more info.&quot;
+1 &lt; Server: gws
+1 &lt; X-XSS-Protection: 0
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; Set-Cookie: __Secure-STRP=AEEP7gKTuL1ZdGck7oCPpDd7bzCOXXpT_0DG91FI4zEWKVbWNZe9WgjBtWsdo0qofa4vBrlRphM_hcOACWsl1NTAf7vPsIenwK1T; expires=Tue, 10-Mar-2026 11:04:17 GMT; path=/; domain=.google.com; Secure; SameSite=strict
+1 &lt; Set-Cookie: AEC=AaJma5vI3Jk-jgkZDW9ib2G9HpmBLIJquX3N9AQmkiIamUmxR064KL403A; expires=Sun, 06-Sep-2026 10:59:17 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax
+1 &lt; Set-Cookie: NID=529=I5NnvQbezAAOkIT-OL5MepxZFAiC0O8Xmbm6JS2JquQ1Nh44_jWJsZfG3F9DQanMiZhkZTy4hQGn7n5mr7EQrdF18-YGDxADBXJA7iXEo9J8dL68deqckH4kJIIE9KTQpFF9IWCFPawAlrw6rME4u8dNUhNY1_80a_skF7SBT8ehh1rfgw7_6XjFRLpd4pIObP5mKwryaUbRutVUSIMc7FeXBoTqBr8-QlA; expires=Wed, 09-Sep-2026 10:59:17 GMT; path=/; domain=.google.com; HttpOnly
+1 &lt; Set-Cookie: __Secure-BUCKET=CKcF; expires=Sun, 06-Sep-2026 10:59:17 GMT; path=/; domain=.google.com; Secure; HttpOnly
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+&lt;!doctype html&gt;&lt;html itemscope=&quot;&quot; itemtype=&quot;http://schema.org/WebPage&quot; lang=&quot;en-IN&quot;&gt;&lt;head&gt;&lt;meta content=&quot;text/html; charset=UTF-8&quot; http-equiv=&quot;Content-Type&quot;&gt;&lt;meta content=&quot;/images/branding/googleg/1x/googleg_standard_color_128dp.png&quot; itemprop=&quot;image&quot;&gt;&lt;title&gt;Google&lt;/title&gt;&lt;script nonce=&quot;TWv9SVLkKZbhbimdByKEaw&quot;&gt;(function(){var _g={kEI:&#39;hfmvaeaMEunN1sQP9YqLsQ0&#39;,kEXPI:&#39;0,203055,9,1101139,2935842,78813,16105,78219,123645,142932,219814,81336,5219175,12706,62192396,65170,39772,74609,709,23254,37805,28334,48904,16391,14019,7714,6975,26410,3050,2,1667,837,20674,2864,22727,10370,22896,13071,9923,10758,11882,6437,9742,2646,2246,22000,14506,1382,2,1,1515,3355,2,194,5814,2,20306,2,874,2231,5089,19,3007,13,783,4081,4,5386,25902,1250,2116,3221,311,534,2046,2,12,16,1545,3,5189,2,12,738,1010,1747,4,15193,4,2200,2,9,4,28,537,5,1113,389,4,2647,5,2698,2870,298,3415,5838,1275,7,1784,7,1043,2,1918,10457,2,5724,9,602,96,1553,4,794,5135,915,3664,1,2,569,234,3,1359,2,2356,2636,10,204,441,158,2,1645,191,4,1928,1638,544,4,1567,2433,187,2105,5,259,5,197,1921,209,236,19,1421,119,4,385,1979,2363,5,40,394,2175,4,3845,4,354,1692,4,264,107,5,4,970,4,966,5,1125,3,2,44,2592,1114,4,32,4,136,137,574,1073,783,4,40,4,2110,4,134,304,323,1,576,1776,1856,9,41,4,1,1,1184,4,14,3,2,1,447,4,730,5,75,4,1940,4,411,1021,217,4,769,572,1,1091,1,265,1928,1,1,2,5463,13,508,823,1454,1016,8,5,14,57,258,695,8,2244,4,281,264,563,2916,18,4,2,544,339,2206,5,1722,4,1731,4119,29,460,21008031,5,2253,739,4,2960,3,3237,4648,606,2,709,849,3,11875,524,13,3656,3,746,6,1149,3,2862,2716,2,1971,2,690,2,6496101,6123,82,108429,3632243,94289,704800,11788913,728180,3632815,111,590,5,1023,219,3,1448,857,137,3,12,1,600,4,65,388,2,996,4,167,4,488,61,220,3,2,2,2,3182,5,3357,1,10,7,7,865,118,1,2,5,44,2,12,16,362,276,2,8,12,1045,1,2,665,207,7,298,3,12,1,1171,47,1013,3806,160,370,311,342,2,3,1090,207,5,163,129,5,142,4,228,54,302,219,89,3,1818,13,2,197,137,4,108,570,165,8,312,125,802,405,177,4,73,450,1,2660,1260,5,2,8,91,622,4,222,14,6,1743,225,4,70,230,375,211,125,4,591,60,1826,4,117,345,243,2,131,245,442,1133,8,92,2,329,800,4,242,960,3,872,4,132,211,239,5138,39,9,946,142,3,308,2,73,218,3,2,2,2,721,215,3,2,1,8,1122,1856,502,1676,293,37,4,507,141,37,93,117,449,320,84,3,273,3,4,317,1,2,160,496,3,2,2,2,239,4,322,232,663,28,454,562,56,111,826,21,443,640,8,12,546,140,3,222,4,752,585,4,441,4,246,1577,4,113,3,2,1,8,591,169,155,12,66,744,774,2,1076,19,4,41,2605,2,174,30,3,2,2,2,662,867,1108&#39;,kBL:&#39;4Poi&#39;,kOPI:89978449};(function(){var a;((a=window.google)==null?0:a.stvsc)?google.kEI=_g.kEI:window.google=_g;}).call(this);})();(function(){google.sn=&#39;webhp&#39;;google.kHL=&#39;en-IN&#39;;google.rdn=true;})();(function(){
+var g=this||self;function k(){return window.google&amp;&amp;window.google.kOPI||null};var l,m=[];function n(a){for(var b;a&amp;&amp;(!a.getAttribute||!(b=a.getAttribute(&quot;eid&quot;)));)a=a.parentNode;return b||l}function p(a){for(var b=null;a&amp;&amp;(!a.getAttribute||!(b=a.getAttribute(&quot;leid&quot;)));)a=a.parentNode;return b}function q(a){/^http:/i.test(a)&amp;&amp;window.location.protocol===&quot;https:&quot;&amp;&amp;(google.ml&amp;&amp;google.ml(Error(&quot;a&quot;),!1,{src:a,glmm:1}),a=&quot;&quot;);return a}
+function r(a,b,d,c,h){var e=&quot;&quot;;b.search(&quot;&amp;ei=&quot;)===-1&amp;&amp;(e=&quot;&amp;ei=&quot;+n(c),b.search(&quot;&amp;lei=&quot;)===-1&amp;&amp;(c=p(c))&amp;&amp;(e+=&quot;&amp;lei=&quot;+c));var f=b.search(&quot;&amp;cshid=&quot;)===-1&amp;&amp;a!==&quot;slh&quot;;c=&quot;&amp;zx=&quot;+Date.now().toString();g._cshid&amp;&amp;f&amp;&amp;(c+=&quot;&amp;cshid=&quot;+g._cshid);(d=d())&amp;&amp;(c+=&quot;&amp;opi=&quot;+d);return&quot;/&quot;+(h||&quot;gen_204&quot;)+&quot;?atyp=i&amp;ct=&quot;+String(a)+&quot;&amp;cad=&quot;+(b+e+c)};l=google.kEI;google.getEI=n;google.getLEI=p;google.ml=function(){return null};google.log=function(a,b,d,c,h,e){e=e===void 0?k:e;d||(d=r(a,b,e,c,h));if(d=q(d)){a=new Image;var f=m.length;m[f]=a;a.onerror=a.onload=a.onabort=function(){delete m[f]};a.src=d}};google.logUrl=function(a,b){b=b===void 0?k:b;return r(&quot;&quot;,a,b)};}).call(this);(function(){google.y={};google.sy={};function e(a,b,d){if(a)var c=a.id;else{do c=Math.random();while(d[c])}d[c]=[a,b]}var f;(f=google).x||(f.x=function(a,b){e(a,b,google.y)});var g;(g=google).sx||(g.sx=function(a,b){e(a,b,google.sy)});google.bx=!1;var h;(h=google).lx||(h.lx=function(){});var k=[],l;(l=google).fce||(l.fce=function(a,b,d,c){k.push([a,b,d,c])});google.qce=k;google.adl=[];}).call(this);google.f={};(function(){
+document.documentElement.addEventListener(&quot;submit&quot;,function(b){var a;if(a=b.target){var c=a.getAttribute(&quot;data-submitfalse&quot;);a=c===&quot;1&quot;||c===&quot;q&quot;&amp;&amp;!a.elements.q.value?!0:!1}else a=!1;a&amp;&amp;(b.preventDefault(),b.stopPropagation())},!0);document.documentElement.addEventListener(&quot;click&quot;,function(b){var a;a:{for(a=b.target;a&amp;&amp;a!==document.documentElement;a=a.parentElement)if(a.tagName===&quot;A&quot;){a=a.getAttribute(&quot;data-nohref&quot;)===&quot;1&quot;;break a}a=!1}a&amp;&amp;b.preventDefault()},!0);}).call(this);&lt;/script&gt;&lt;style&gt;/* IMPORTANT: Changes to this template need to be tested in all OneGoogle  */
+/* enabled frontends!                                                      */
+
+/* Explanation of classes and ids...                                       */
+/* #gbar: Outer div containing the OneGoogle bar.                          */
+/* #guser: Outer div containing the GAIA bar.                              */
+/* #gbs: Iframe shim behind the more box.                                  */
+/* .gbh: Div which draws the main horizontal line.                         */
+/* .gbd: Divs which draw horizontal lines within the more box.             */
+/* .gb1: Class applied to all anchors on the top line.                     */
+/* .gb4: Class applied to all regular anchors in the Gaia bar.             */
+/* .gbi: Class applied to all internal anchors in the Gaia bar.            */
+/* .gbf: Class applied to all featured anchors in the Gaia bar.            */
+
+#gbar,#guser{
+  font-size:13px;
+  
+  padding-top:1px !important;
+}
+#gbar{
+  
+  height:22px
+}
+#guser{
+  padding-bottom:7px !important;
+  text-align:right
+}
+.gbh,.gbd{
+  border-top:1px solid #c9d7f1;
+  /* Needs to be 1px in order for the gaia bar to be clickable in Mac IE5. */
+  font-size:1px
+}
+.gbh{
+  height:0;
+  position:absolute;
+  top:24px;
+  width:100%
+}
+/* Hack to hide this CSS from IE5 Mac and 4.x browsers and earlier.        */
+@media all{
+  /* This needs to be hidden from NS 4 and IE 4, because adding a margin   */
+  /* would change the element to display:block.                            */
+  .gb1{
+    /* Setting a height on .gb1 triggers hasLayout which causes IE5 to     */
+    /* properly render the right margin.                                   */
+    height:22px;
+    margin-right:.5em;
+    vertical-align:top
+  }
+  /* Mac IE5 does not handle floats well, so we don&#39;t even try to float the */
+  /* OneGoogle and GAIA bars on the same line.                              */
+  #gbar{
+    float:left
+  }
+}
+/* Underline the top links for all frontends. The default style on some    */
+/* frontends is to not underline links or to underline only on hover,      */
+/* so we apply the underline here in order to unify the OneGoogle bar      */
+/* design across products.                                                 */
+  a.gb1,a.gb4{
+    text-decoration:underline !important
+  }
+
+/* The following selectors are used for setting the appropriate color       */
+/* to elements in the OneGoogle bar. The preconditions are as follows:      */
+/* CSS_RANK(text selector) &lt;= CSS_RANK(link selector)                       */
+/* CSS_RANK(link selector) &lt;= CSS_RANK(internal or featured link selector)  */
+/* CSS_RANK(internal or featured link selector) &lt;= CSS_RANK(hover selector) */
+
+/* Link selector */
+a.gb1,a.gb4{
+  /* Marked important to override pseudo classes in IE6 strict mode. */
+  color:#00c !important
+}
+
+/* Internal and featured text and link selectors */
+/* These rules apply only to those frontends for which we want to enable */
+/* internal and featured link coloration.                                */
+.gbi .gb4{
+  /* Marked important to override pseudo classes in IE6 strict mode. */
+  color:#dd8e27 !important
+}
+.gbf .gb4{
+  /* Marked important to override pseudo classes in IE6 strict mode. */
+  color:#900 !important
+}
+
+&lt;/style&gt;&lt;style&gt;body,td,a,p,.h{font-family:sans-serif}body{margin:0;overflow-y:scroll}#gog{padding:3px 8px 0}td{line-height:.8em}.gac_m td{line-height:17px}form{margin-bottom:20px}.h{color:#1967d2}em{font-weight:bold;font-style:normal}.lst{height:25px;width:496px}.gsfi,.lst{font:18px sans-serif}.gsfs{font:17px sans-serif}.ds{display:inline-box;display:inline-block;margin:3px 0 4px;margin-left:4px}input{font-family:inherit}body{background:#fff;color:#1f1f1f}a{color:#681da8;text-decoration:none}a:hover,a:active{text-decoration:underline}.fl a{color:#1967d2}a:visited{color:#681da8}.sblc{padding-top:5px}.sblc a{display:block;margin:2px 0;margin-left:13px;font-size:11px}.lsbb{background:#ecedee;border:solid 1px;border-color:#d2d2d2 #70757a #70757a #d2d2d2;height:30px}.lsbb{display:block}#WqQANb a{display:inline-block;margin:0 12px}.lsb{background:url(/images/nav_logo229.png) 0 -261px repeat-x;color:#1f1f1f;border:none;cursor:pointer;height:30px;margin:0;outline:0;font:15px sans-serif;vertical-align:top}.lsb:active{background:#dadce0}.lst:focus{outline:none}&lt;/style&gt;&lt;script nonce=&quot;TWv9SVLkKZbhbimdByKEaw&quot;&gt;(function(){window.google.erd={jsr:1,bv:2394,de:true,c:&#39;393d&#39;};
+var f=this||self;var k,l=(k=f.mei)!=null?k:1,m,p=(m=f.diel)!=null?m:0,q,r=(q=f.sdo)!=null?q:!0,t=0,u,v=google.erd,w=v.jsr;google.ml=function(a,b,d,n,e){e=e===void 0?2:e;b&amp;&amp;(u=a&amp;&amp;a.message);d===void 0&amp;&amp;(d={});d.cad=&quot;ple_&quot;+google.ple+&quot;.aple_&quot;+google.aple;if(google.dl)return google.dl(a,e,d,!0),null;b=d;if(w&lt;0){window.console&amp;&amp;console.error(a,b);if(w===-2)throw a;b=!1}else b=!a||!a.message||a.message===&quot;Error loading script&quot;||t&gt;=l&amp;&amp;!n?!1:!0;if(!b)return null;t++;d=d||{};b=encodeURIComponent;var c=&quot;/gen_204?atyp=i&amp;ei=&quot;+b(google.kEI);google.kEXPI&amp;&amp;(c+=&quot;&amp;jexpid=&quot;+b(google.kEXPI));c+=&quot;&amp;srcpg=&quot;+b(google.sn)+&quot;&amp;jsr=&quot;+b(v.jsr)+
+&quot;&amp;bver=&quot;+b(v.bv);v.dpf&amp;&amp;(c+=&quot;&amp;dpf=&quot;+b(v.dpf));var g=a.lineNumber;g!==void 0&amp;&amp;(c+=&quot;&amp;line=&quot;+g);var h=a.fileName;h&amp;&amp;(h.indexOf(&quot;-extension:/&quot;)&gt;0&amp;&amp;(e=3),c+=&quot;&amp;script=&quot;+b(h),g&amp;&amp;h===window.location.href&amp;&amp;(g=document.documentElement.outerHTML.split(&quot;\n&quot;)[g],c+=&quot;&amp;cad=&quot;+b(g?g.substring(0,300):&quot;No script found.&quot;)));google.ple&amp;&amp;google.ple===1&amp;&amp;(e=2);d&amp;&amp;v.c&amp;&amp;(d.ofc=String(v.c));c=c+(&quot;&amp;jsel=&quot;+e)+&quot;&amp;ectx=&quot;+b(JSON.stringify(d));c+=&quot;&amp;emsg=&quot;;c+=b(a.name+&quot;: &quot;+a.message);c+=&quot;&amp;jsst=&quot;;c+=b(a.stack||&quot;N/A&quot;);c.length&gt;=12288&amp;&amp;
+(c=c.substring(0,12288));a=c;n||google.log(0,&quot;&quot;,a);return a};window.onerror=function(a,b,d,n,e){u!==a&amp;&amp;(a=e instanceof Error?e:Error(a),d===void 0||&quot;lineNumber&quot;in a||(a.lineNumber=d),b===void 0||&quot;fileName&quot;in a||(a.fileName=b),google.ml(a,!1,void 0,!1,a.name===&quot;SyntaxError&quot;||a.message.substring(0,11)===&quot;SyntaxError&quot;||a.message.indexOf(&quot;Script error&quot;)!==-1?3:p));u=null;r&amp;&amp;t&gt;=l&amp;&amp;(window.onerror=null)};})();&lt;/script&gt;&lt;/head&gt;&lt;body bgcolor=&quot;#fff&quot;&gt;&lt;script nonce=&quot;TWv9SVLkKZbhbimdByKEaw&quot;&gt;(function(){var src=&#39;/images/nav_logo229.png&#39;;var iesg=false;document.body.onload = function(){window.n &amp;&amp; window.n();if (document.images){new Image().src=src;}
+if (!iesg){document.f&amp;&amp;document.f.q.focus();document.gbqf&amp;&amp;document.gbqf.q.focus();}
+}
+})();&lt;/script&gt;&lt;div id=&quot;mngb&quot;&gt;&lt;div id=gbar&gt;&lt;nobr&gt;&lt;b class=gb1&gt;Search&lt;/b&gt; &lt;a class=gb1 href=&quot;https://www.google.com/imghp?hl=en&amp;tab=wi&quot;&gt;Images&lt;/a&gt; &lt;a class=gb1 href=&quot;https://maps.google.co.in/maps?hl=en&amp;tab=wl&quot;&gt;Maps&lt;/a&gt; &lt;a class=gb1 href=&quot;https://play.google.com/?hl=en&amp;tab=w8&quot;&gt;Play&lt;/a&gt; &lt;a class=gb1 href=&quot;https://www.youtube.com/?tab=w1&quot;&gt;YouTube&lt;/a&gt; &lt;a class=gb1 href=&quot;https://news.google.com/?tab=wn&quot;&gt;News&lt;/a&gt; &lt;a class=gb1 href=&quot;https://mail.google.com/mail/?tab=wm&quot;&gt;Gmail&lt;/a&gt; &lt;a class=gb1 href=&quot;https://drive.google.com/?tab=wo&quot;&gt;Drive&lt;/a&gt; &lt;a class=gb1 style=&quot;text-decoration:none&quot; href=&quot;https://www.google.co.in/intl/en/about/products?tab=wh&quot;&gt;&lt;u&gt;More&lt;/u&gt; &amp;raquo;&lt;/a&gt;&lt;/nobr&gt;&lt;/div&gt;&lt;div id=guser width=100%&gt;&lt;nobr&gt;&lt;span id=gbn class=gbi&gt;&lt;/span&gt;&lt;span id=gbf class=gbf&gt;&lt;/span&gt;&lt;span id=gbe&gt;&lt;/span&gt;&lt;a href=&quot;http://www.google.co.in/history/optout?hl=en&quot; class=gb4&gt;Web History&lt;/a&gt; | &lt;a  href=&quot;/preferences?hl=en&quot; class=gb4&gt;Settings&lt;/a&gt; | &lt;a target=_top id=gb_70 href=&quot;https://accounts.google.com/ServiceLogin?hl=en&amp;passive=true&amp;continue=https://www.google.com/&amp;ec=GAZAAQ&quot; class=gb4&gt;Sign in&lt;/a&gt;&lt;/nobr&gt;&lt;/div&gt;&lt;div class=gbh style=left:0&gt;&lt;/div&gt;&lt;div class=gbh style=right:0&gt;&lt;/div&gt;&lt;/div&gt;&lt;center&gt;&lt;br clear=&quot;all&quot; id=&quot;lgpd&quot;&gt;&lt;div&gt;&lt;img alt=&quot;Google&quot; height=&quot;92&quot; src=&quot;/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png&quot; style=&quot;padding:28px 0 14px&quot; width=&quot;272&quot; id=&quot;hplogo&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;form action=&quot;/search&quot; name=&quot;f&quot;&gt;&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tr valign=&quot;top&quot;&gt;&lt;td width=&quot;25%&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td align=&quot;center&quot; nowrap=&quot;&quot;&gt;&lt;input name=&quot;ie&quot; value=&quot;ISO-8859-1&quot; type=&quot;hidden&quot;&gt;&lt;input value=&quot;en-IN&quot; name=&quot;hl&quot; type=&quot;hidden&quot;&gt;&lt;input name=&quot;source&quot; type=&quot;hidden&quot; value=&quot;hp&quot;&gt;&lt;input name=&quot;biw&quot; type=&quot;hidden&quot;&gt;&lt;input name=&quot;bih&quot; type=&quot;hidden&quot;&gt;&lt;div class=&quot;ds&quot; style=&quot;height:32px;margin:4px 0&quot;&gt;&lt;input class=&quot;lst&quot; style=&quot;margin:0;padding:5px 8px 0 6px;vertical-align:top;color:#1f1f1f&quot; autocomplete=&quot;off&quot; value=&quot;&quot; title=&quot;Google Search&quot; maxlength=&quot;2048&quot; name=&quot;q&quot; size=&quot;57&quot;&gt;&lt;/div&gt;&lt;br style=&quot;line-height:0&quot;&gt;&lt;span class=&quot;ds&quot;&gt;&lt;span class=&quot;lsbb&quot;&gt;&lt;input class=&quot;lsb&quot; value=&quot;Google Search&quot; name=&quot;btnG&quot; type=&quot;submit&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;ds&quot;&gt;&lt;span class=&quot;lsbb&quot;&gt;&lt;input class=&quot;lsb&quot; id=&quot;tsuid_hfmvaeaMEunN1sQP9YqLsQ0_1&quot; value=&quot;I&#39;m Feeling Lucky&quot; name=&quot;btnI&quot; type=&quot;submit&quot;&gt;&lt;script nonce=&quot;TWv9SVLkKZbhbimdByKEaw&quot;&gt;(function(){var id=&#39;tsuid_hfmvaeaMEunN1sQP9YqLsQ0_1&#39;;document.getElementById(id).onclick = function(){if (this.form.q.value){this.checked = 1;if (this.form.iflsig)this.form.iflsig.disabled = false;}
+else top.location=&#39;/doodles/&#39;;};})();&lt;/script&gt;&lt;input value=&quot;AFdpzrgAAAAAabAHlWKXaS2FDeGNDYojnw7zqf4FlGcX&quot; name=&quot;iflsig&quot; type=&quot;hidden&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td class=&quot;fl sblc&quot; align=&quot;left&quot; nowrap=&quot;&quot; width=&quot;25%&quot;&gt;&lt;a href=&quot;/advanced_search?hl=en-IN&amp;amp;authuser=0&quot;&gt;Advanced search&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;input id=&quot;gbv&quot; name=&quot;gbv&quot; type=&quot;hidden&quot; value=&quot;1&quot;&gt;&lt;script nonce=&quot;TWv9SVLkKZbhbimdByKEaw&quot;&gt;(function(){var a,b=&quot;1&quot;;if(document&amp;&amp;document.getElementById)if(typeof XMLHttpRequest!=&quot;undefined&quot;)b=&quot;2&quot;;else if(typeof ActiveXObject!=&quot;undefined&quot;){var c,d,e=[&quot;MSXML2.XMLHTTP.6.0&quot;,&quot;MSXML2.XMLHTTP.3.0&quot;,&quot;MSXML2.XMLHTTP&quot;,&quot;Microsoft.XMLHTTP&quot;];for(c=0;d=e[c++];)try{new ActiveXObject(d),b=&quot;2&quot;}catch(h){}}a=b;if(a==&quot;2&quot;&amp;&amp;location.search.indexOf(&quot;&amp;gbv=2&quot;)==-1){var f=google.gbvu,g=document.getElementById(&quot;gbv&quot;);g&amp;&amp;(g.value=a);f&amp;&amp;window.setTimeout(function(){location.href=f},0)};}).call(this);&lt;/script&gt;&lt;/form&gt;&lt;div style=&quot;font-size:83%;min-height:3.5em&quot;&gt;&lt;br&gt;&lt;div id=&quot;gws-output-pages-elements-homepage_additional_languages__als&quot;&gt;&lt;style&gt;#gws-output-pages-elements-homepage_additional_languages__als{font-size:small;margin-bottom:24px}#SIvCob{color:#545454;display:inline-block;line-height:28px;}#SIvCob a{}.H6sW5{display:inline-block;margin:0 2px;white-space:nowrap}.z4hgWe{display:inline-block;margin:0 2px}&lt;/style&gt;&lt;div id=&quot;SIvCob&quot;&gt;Google offered in:  &lt;a href=&quot;https://www.google.com/setprefs?sig=0_9e17awkvapSegPPUMX-tBvIaiVU%3D&amp;amp;hl=hi&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwim44jJlpWTAxXpppUCHXXFItYQ2ZgBCAY&quot;&gt;&amp;#2361;&amp;#2367;&amp;#2344;&amp;#2381;&amp;#2342;&amp;#2368;&lt;/a&gt;    &lt;a href=&quot;https://www.google.com/setprefs?sig=0_9e17awkvapSegPPUMX-tBvIaiVU%3D&amp;amp;hl=bn&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwim44jJlpWTAxXpppUCHXXFItYQ2ZgBCAc&quot;&gt;&amp;#2476;&amp;#2494;&amp;#2434;&amp;#2482;&amp;#2494;&lt;/a&gt;    &lt;a href=&quot;https://www.google.com/setprefs?sig=0_9e17awkvapSegPPUMX-tBvIaiVU%3D&amp;amp;hl=te&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwim44jJlpWTAxXpppUCHXXFItYQ2ZgBCAg&quot;&gt;&amp;#3108;&amp;#3142;&amp;#3122;&amp;#3137;&amp;#3095;&amp;#3137;&lt;/a&gt;    &lt;a href=&quot;https://www.google.com/setprefs?sig=0_9e17awkvapSegPPUMX-tBvIaiVU%3D&amp;amp;hl=mr&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwim44jJlpWTAxXpppUCHXXFItYQ2ZgBCAk&quot;&gt;&amp;#2350;&amp;#2352;&amp;#2366;&amp;#2336;&amp;#2368;&lt;/a&gt;    &lt;a href=&quot;https://www.google.com/setprefs?sig=0_9e17awkvapSegPPUMX-tBvIaiVU%3D&amp;amp;hl=ta&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwim44jJlpWTAxXpppUCHXXFItYQ2ZgBCAo&quot;&gt;&amp;#2980;&amp;#2990;&amp;#3007;&amp;#2996;&amp;#3021;&lt;/a&gt;    &lt;a href=&quot;https://www.google.com/setprefs?sig=0_9e17awkvapSegPPUMX-tBvIaiVU%3D&amp;amp;hl=gu&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwim44jJlpWTAxXpppUCHXXFItYQ2ZgBCAs&quot;&gt;&amp;#2711;&amp;#2753;&amp;#2716;&amp;#2736;&amp;#2750;&amp;#2724;&amp;#2752;&lt;/a&gt;    &lt;a href=&quot;https://www.google.com/setprefs?sig=0_9e17awkvapSegPPUMX-tBvIaiVU%3D&amp;amp;hl=kn&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwim44jJlpWTAxXpppUCHXXFItYQ2ZgBCAw&quot;&gt;&amp;#3221;&amp;#3240;&amp;#3277;&amp;#3240;&amp;#3233;&lt;/a&gt;    &lt;a href=&quot;https://www.google.com/setprefs?sig=0_9e17awkvapSegPPUMX-tBvIaiVU%3D&amp;amp;hl=ml&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwim44jJlpWTAxXpppUCHXXFItYQ2ZgBCA0&quot;&gt;&amp;#3374;&amp;#3378;&amp;#3375;&amp;#3390;&amp;#3379;&amp;#3330;&lt;/a&gt;    &lt;a href=&quot;https://www.google.com/setprefs?sig=0_9e17awkvapSegPPUMX-tBvIaiVU%3D&amp;amp;hl=pa&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwim44jJlpWTAxXpppUCHXXFItYQ2ZgBCA4&quot;&gt;&amp;#2602;&amp;#2672;&amp;#2588;&amp;#2622;&amp;#2604;&amp;#2624;&lt;/a&gt;  &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;span id=&quot;footer&quot;&gt;&lt;div style=&quot;font-size:10pt&quot;&gt;&lt;div style=&quot;margin:19px auto;text-align:center&quot; id=&quot;WqQANb&quot;&gt;&lt;a href=&quot;/intl/en/ads/&quot;&gt;Advertising&lt;/a&gt;&lt;a href=&quot;http://www.google.co.in/services/&quot;&gt;Business Solutions&lt;/a&gt;&lt;a href=&quot;/intl/en/about.html&quot;&gt;About Google&lt;/a&gt;&lt;a href=&quot;https://www.google.com/setprefdomain?prefdom=IN&amp;amp;prev=https://www.google.co.in/&amp;amp;sig=K_AkZISoHrLJHlneZ5T1XnU8TA0XI%3D&quot;&gt;Google.co.in&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;p style=&quot;font-size:8pt;color:#636363&quot;&gt;&amp;copy; 2026 - &lt;a href=&quot;/intl/en/policies/privacy/&quot;&gt;Privacy&lt;/a&gt; - &lt;a href=&quot;/intl/en/policies/terms/&quot;&gt;Terms&lt;/a&gt;&lt;/p&gt;&lt;/span&gt;&lt;/center&gt;&lt;script nonce=&quot;TWv9SVLkKZbhbimdByKEaw&quot;&gt;(function(){window.google.cdo={height:757,width:1440};(function(){var a=window.innerWidth,b=window.innerHeight;if(!a||!b){var c=window.document,d=c.compatMode==&quot;CSS1Compat&quot;?c.documentElement:c.body;a=d.clientWidth;b=d.clientHeight}if(a&amp;&amp;b&amp;&amp;(a!=google.cdo.width||b!=google.cdo.height)){var e=google,f=e.log,g=&quot;/client_204?&amp;atyp=i&amp;biw=&quot;+a+&quot;&amp;bih=&quot;+b+&quot;&amp;ei=&quot;+google.kEI,h=&quot;&quot;,k=window.google&amp;&amp;window.google.kOPI||null;k&amp;&amp;(h+=&quot;&amp;opi=&quot;+k);f.call(e,&quot;&quot;,&quot;&quot;,g+h)};}).call(this);})();(function(){google.xjs={basecomb:&#39;/xjs/_/js/k\x3dxjs.hp.en.VAq4k59KA94.es5.O/ck\x3dxjs.hp.veOUFGWW5vI.L.X.O/am\x3dAAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAQIBAAAAAAAAAAAAAAACAAAAAAAAAAIIBAAAQAEIAAAAAAAABACAAAAAAAAQAABAAAgAAAIg7AgAAAAAACIBFAAAAAAAAAA8B/d\x3d1/ed\x3d1/dg\x3d0/ujg\x3d1/rs\x3dACT90oFufk2qFjwbUFoAK7Ap_UOvQqotwA&#39;,basecss:&#39;/xjs/_/ss/k\x3dxjs.hp.veOUFGWW5vI.L.X.O/am\x3dAAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAEIAAAAAAAABACAAAAAAAAQAABAAAg/rs\x3dACT90oH2GL9gIdGRaH6zR3AXFJPYBrBGBw&#39;,basejs:&#39;/xjs/_/js/k\x3dxjs.hp.en.VAq4k59KA94.es5.O/am\x3dAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAACAAAAAAAAAAIIBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIg7AgAAAAAACIBFAAAAAAAAAA8B/dg\x3d0/rs\x3dACT90oEx8pFe0Vl8mCSOqK8VXrXdq41-yg&#39;,excm:[]};})();(function(){var u=&#39;/xjs/_/js/k\x3dxjs.hp.en.VAq4k59KA94.es5.O/am\x3dAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAACAAAAAAAAAAIIBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIg7AgAAAAAACIBFAAAAAAAAAA8B/d\x3d1/ed\x3d1/dg\x3d4/rs\x3dACT90oEx8pFe0Vl8mCSOqK8VXrXdq41-yg/m\x3dsb_he,d&#39;;var st=1;var amd=1000;var mmd=0;var pop=true;var povp=false;var raf=false;var lfpp=false;var ecb=false;var cst=false;var pxp=false;
+var f=this||self;function g(){var a=google.ia&amp;&amp;google.ia.r.B2Jtyd;return a&amp;&amp;[1,5,6].indexOf(a.m)&gt;=0&amp;&amp;a.cbfd&amp;&amp;a.cbvi?a:void 0};function h(a){var b=document.createElement(&quot;link&quot;);b.as=&quot;script&quot;;b.href=a;b.rel=&quot;preload&quot;;document.body.appendChild(b)}function k(){var a=[l];google.dp||(a.forEach(h),google.dp=!0)};google.ps=google.ps||[];function m(a){return a?(a=a.match(/[/?&amp;]ccb=([^/&amp;?#]+)/))?a[1]:null:null}function p(a){var b=l,c=function(){};google.lx=google.stvsc?c:function(){q(b,a&amp;&amp;raf,a&amp;&amp;lfpp);google.lx=c};google.bx||google.lx()}function r(a,b){b&amp;&amp;(a.src=b);if(!m(a.src)){var c=a.onload;a.onload=function(d){c&amp;&amp;c(d);google.ps=google.ps.filter(function(e){return a.src!==e})}}google.ps.push(a.src);document.body.appendChild(a)}
+function t(a,b,c,d){c&amp;&amp;(a.fetchPriority=&quot;low&quot;);b?requestAnimationFrame(function(){r(a,d)}):r(a,d)}google.as=r;function q(a,b,c){google.tick&amp;&amp;google.tick(&quot;load&quot;,&quot;xjsls&quot;);var d=document.createElement(&quot;script&quot;);d.onerror=function(){google.ple=1};d.onload=function(){google.ple=0};google.xjsus=void 0;t(d,b,c,a);google.aple=-1;google.dp=!0};function w(){for(var a=document.getElementsByTagName(&quot;img&quot;),b=0,c=a.length;b&lt;c;b++){var d=a[b],e;if(e=d.hasAttribute(&quot;data-lzy_&quot;)&amp;&amp;Number(d.getAttribute(&quot;data-atf&quot;))&amp;1)e=d.getAttribute(&quot;jscontroller&quot;),e=!((e===&quot;UBXHI&quot;||e===&quot;R3fhkb&quot;||e===&quot;TSZEqd&quot;)&amp;&amp;d.hasAttribute(&quot;data-src&quot;));if(e)return!0}return!1};var l,x,y,z,A,B,C,D,E,F,G=&quot;&quot;;function H(){l=pxp&amp;&amp;google.xjsup||u;var a=l.match(/\/cb=(loaded_h_\d+)/);a&amp;&amp;a[1]&amp;&amp;(G=a[1]);google.xjsu=l;f._F_jsUrl=l;B=function(c){p(c)};x=!1;y=(st===1||st===3)&amp;&amp;!!google.caft&amp;&amp;!w();z=g();A=!G&amp;&amp;(st===2||st===3)&amp;&amp;!!z&amp;&amp;!w();if(G){var b=(st===2||st===3)&amp;&amp;!!z;f[G]=function(c){var d=!1,e=function(){d||(d=!0,cst?setTimeout(function(){return void c.call(window,window._)},0):c.call(window,window._))};b&amp;&amp;google.ia.adls?(z.cbvi.push(function(){delete google.ia.adls}),z.cbvi.push(e),setTimeout(e,mmd)):e()}}C=
+pop;D=povp;E=C&amp;&amp;document.prerendering||D&amp;&amp;document.hidden;F=D?&quot;visibilitychange&quot;:&quot;prerenderingchange&quot;}function I(a){x||y||A||E||(B(a),x=!0)}
+setTimeout(function(){google.tick&amp;&amp;google.tick(&quot;load&quot;,&quot;xjspls&quot;);H();if(y||A||E){if(y){var a=function(){y=!1;I()};google.caft(a);setTimeout(a,amd)}A&amp;&amp;(a=function(){A=!1;I()},z.cbvi.push(a),setTimeout(a,mmd));if(E){var b=function(){(D?document.hidden:document.prerendering)||(E=!1,I(!D),document.removeEventListener(F,b))};document.addEventListener(F,b,{passive:!0})}x||k()}else B()},0);})();window._ = window._ || {};window._DumpException = _._DumpException = function(e){throw e;};window._s = window._s || {};_s._DumpException = _._DumpException;window._qs = window._qs || {};_qs._DumpException = _._DumpException;window.loaded_h_0 = function(cb){cb.call(window,window._);};(function(){var t=[512,0,262144,0,0,0,67108864,0,6340672,1024,16777216,536870912,1016594440,134217987,147800,1081348,554044160,1024,2,65536,33558528,536870912,9144,0,4556808,0,284164096];window._F_toggles = window._xjs_toggles = t;})();window._F_installCss = window._F_installCss || function(css){};(function(){var pmc=&#39;{\x22d\x22:{},\x22sb_he\x22:{\x22client\x22:\x22heirloom-hp\x22,\x22dh\x22:true,\x22ds\x22:\x22\x22,\x22host\x22:\x22google.com\x22,\x22jsonp\x22:true,\x22msgs\x22:{\x22cibl\x22:\x22Clear Search\x22,\x22dym\x22:\x22Did you mean:\x22,\x22lcky\x22:\x22I\\u0026#39;m Feeling Lucky\x22,\x22lml\x22:\x22Learn more\x22,\x22psrc\x22:\x22This search was removed from your \\u003Ca href\x3d\\\x22/history\\\x22\\u003EWeb History\\u003C/a\\u003E\x22,\x22psrl\x22:\x22Remove\x22,\x22sbit\x22:\x22Search by image\x22,\x22srch\x22:\x22Google Search\x22},\x22ovr\x22:{},\x22pq\x22:\x22\x22,\x22rfs\x22:[],\x22stok\x22:\x22DIJE8tNpgGDv2G4LA19sLu4XAjo\x22}}&#39;;google.pmc=JSON.parse(pmc);})();&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
